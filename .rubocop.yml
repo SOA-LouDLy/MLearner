@@ -1,5 +1,4 @@
 ---
-
 # Apply latest style guide and new cops
 AllCops: 
   TargetRubyVersion: 3.0 
@@ -10,3 +9,4 @@ Metrics/BlockLength:
   Enabled: true 
   Exclude:
     - spec/**/*
+
