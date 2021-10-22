@@ -16,7 +16,6 @@ end
 oml_response = {}
 oml_results = {}
 
-
 ## HAPPY DATA INFO REQUEST
 data_info_url = oml_api_path('data/1', config)
 oml_response[data_info_url] = call_oml_url(data_info_url)
@@ -31,7 +30,6 @@ oml_results['format'] = data_info['data_set_description']['format']
 oml_results['tag'] = data_info['data_set_description']['tag']
 
 oml_results['original_data_url'] = data_info['data_set_description']['original_data_url']
-
 
 ## BAD DATA INFO REQUEST
 bad_data_info_url = oml_api_path('data/99999999', config)
