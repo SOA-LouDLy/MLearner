@@ -14,7 +14,7 @@ module MLearner
     end
 
     def dataset(path)
-      dataset = Request.new(API_ROOT, @api_key).dataset(path).parse
+      dataset = JSON.parse(Request.new(API_ROOT, @api_key).dataset(path).body.to_s)
       Dataset.new(dataset)
     end
 
@@ -26,7 +26,7 @@ module MLearner
       end
 
       def dataset(path)
-        get("#{@api_root}/#{path}?api_key=#{@key}")
+        get("#{@api_root}#{path}?api_key=#{@key}")
       end
 
       def get(url)

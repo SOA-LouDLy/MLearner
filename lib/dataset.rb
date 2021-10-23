@@ -10,19 +10,19 @@ module MLearner
     end
 
     def creator
-      @dataset['creator']
+      @dataset['data_set_description']['creator']
     end
 
     def url
-      @dataset['url']
+      @dataset['data_set_description']['url']
     end
 
     def description
-      @dataset['description']
+      @dataset['data_set_description']['description']
     end
 
     def name
-      @dataset['name']
+      @dataset['data_set_description']['name']
     end
   end
 end
